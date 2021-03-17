@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>santhu</title>
+</head>
+<body>
+<h1>Welcome to text analyzer.enter text below</h1>
+<form action="/analyze" method="post">
+    {% csrf_token %}
+    <textarea style='margin: 0px; width: 769px; height: 201px;' name="text"></textarea><br>
+    <input type="checkbox" name="removepunc">removepunc<br>
+    <input type="checkbox" name="capitalize">capitalize<br>
+    <input type="checkbox" name="newlineremove">newlineremove<br>
+    <input type="checkbox" name="spaceremove">spaceremove<br>
+    <button type="submit">Analyze text</button>
+</form>
+</body>
+</html>
